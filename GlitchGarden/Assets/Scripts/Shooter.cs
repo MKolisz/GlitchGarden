@@ -12,4 +12,5 @@ public class Shooter : MonoBehaviour
     {
         Instantiate(projectile, gun.transform.position, transform.rotation);
     }
+
 }
