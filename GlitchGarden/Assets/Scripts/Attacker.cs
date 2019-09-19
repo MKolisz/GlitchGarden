@@ -6,6 +6,7 @@ public class Attacker : MonoBehaviour
 {
 
     float currentSpeed = 0f;
+    GameObject currentTarget;
 
     // Start is called before the first frame update
     void Start()
@@ -22,5 +23,11 @@ public class Attacker : MonoBehaviour
     public void SetMovementSpeed(float speed)
     {
         currentSpeed = speed;
+    }
+
+    public void Attack(GameObject target)
+    {
+        GetComponent<Animator>().SetBool("bIsAttacking", true);
+        currentTarget = target;
     }
 }
