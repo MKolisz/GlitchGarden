@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 1129981999990973188}
   - component: {fileID: 302657388}
   - component: {fileID: 3784259447355312317}
+  - component: {fileID: 1835384611}
   m_Layer: 0
   m_Name: Gravestone
   m_TagString: Untagged
@@ -187,7 +188,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 200
-  deathVFX: {fileID: 0}
+  deathVFX: {fileID: 1022953910748291515, guid: 39f29b90c7f16b04ca8f208d4fbd3d34,
+    type: 3}
+--- !u!114 &1835384611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129981999990973189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c36b447b65ad456438903b80c0833bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7191937648027801711
 GameObject:
   m_ObjectHideFlags: 0

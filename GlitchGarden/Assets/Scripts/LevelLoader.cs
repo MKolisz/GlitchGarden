@@ -15,18 +15,34 @@ public class LevelLoader : MonoBehaviour
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         if (currentSceneIndex == 0)
         {
-            StartCoroutine(WaitAndLoadMenu());
+            StartCoroutine(WaitAndLoadNextScene());
         }
     }
 
-    IEnumerator WaitAndLoadMenu()
+    public IEnumerator WaitAndLoadNextScene()
     {
         yield return new WaitForSeconds(timeToWait);
         LoadNextScene();
     }
 
+    public IEnumerator WaitAndLoadGameOver()
+    {
+        yield return new WaitForSeconds(timeToWait);
+        LoadGameOver();
+    }
+
     public void LoadNextScene()
     {
         SceneManager.LoadScene(currentSceneIndex+1);
+    }
+
+    public void LoadGameOver()
+    {
+        SceneManager.LoadScene("Game Over Screen");
+    }
+
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene(1);
     }
 }

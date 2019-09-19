@@ -5,6 +5,7 @@ using UnityEngine;
 public class Attacker : MonoBehaviour
 {
 
+    [SerializeField] int damageToPlayer = 10;
     float currentSpeed = 0f;
     GameObject currentTarget;
 
@@ -20,6 +21,8 @@ public class Attacker : MonoBehaviour
         transform.Translate(Vector2.left *currentSpeed* Time.deltaTime);
         UpdateAnimationState();
     }
+
+    public int GetDamageToPlayer() { return damageToPlayer; }
 
     private void UpdateAnimationState()
     {
