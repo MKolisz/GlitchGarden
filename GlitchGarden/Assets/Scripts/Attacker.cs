@@ -5,14 +5,19 @@ using UnityEngine;
 public class Attacker : MonoBehaviour
 {
 
+    static int attackerCount = 0;
     [SerializeField] int damageToPlayer = 10;
     float currentSpeed = 0f;
     GameObject currentTarget;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
+        FindObjectOfType<LevelController>().AttackerSpawned();
+    }
+
+    private void OnDestroy()
+    {
+        FindObjectOfType<LevelController>().AttackerKilled();
     }
 
     // Update is called once per frame
