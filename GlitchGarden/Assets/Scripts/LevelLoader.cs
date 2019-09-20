@@ -43,6 +43,19 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadMenu()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(1);
     }
+
+    public void ReloadScene()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
 }

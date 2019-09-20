@@ -26,7 +26,7 @@ public class PlayerHealth : MonoBehaviour
         UpdateDisplay();
         if(health<=0)
         {
-            FindObjectOfType<LevelLoader>().StartCoroutine(FindObjectOfType<LevelLoader>().WaitAndLoadGameOver());
+            FindObjectOfType<LevelController>().HandleLoseCondition();
         }
     }
 
