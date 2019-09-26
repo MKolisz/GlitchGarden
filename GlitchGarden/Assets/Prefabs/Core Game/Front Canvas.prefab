@@ -92,7 +92,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 906d027cc5e91ad4bbb0083e72ea3c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
 --- !u!1 &4780031494410175342
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,7 +184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aea748ee5c2db748b26a20f5a8046c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stars: 100
+  stars: 300
 --- !u!1 &4780031494870715311
 GameObject:
   m_ObjectHideFlags: 0
