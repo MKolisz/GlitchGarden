@@ -190,9 +190,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 17633883612183910, guid: d9e8bc2b5bc2d4843ba2b0e25862b5e6,
-          type: 3}
-        m_MethodName: 
+      - m_Target: {fileID: 551766953}
+        m_MethodName: SetDefaults
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -326,7 +325,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 515276532}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 0.99
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -934,6 +933,97 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &551766952
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 226820007330464059, guid: 0bbed52e4d6fa65418819d07e08cd725,
+        type: 3}
+      propertyPath: m_Name
+      value: Options Controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 226820007330464057, guid: 0bbed52e4d6fa65418819d07e08cd725,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 226820007330464057, guid: 0bbed52e4d6fa65418819d07e08cd725,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 226820007330464057, guid: 0bbed52e4d6fa65418819d07e08cd725,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 226820007330464057, guid: 0bbed52e4d6fa65418819d07e08cd725,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 226820007330464057, guid: 0bbed52e4d6fa65418819d07e08cd725,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 226820007330464057, guid: 0bbed52e4d6fa65418819d07e08cd725,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 226820007330464057, guid: 0bbed52e4d6fa65418819d07e08cd725,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 226820007330464057, guid: 0bbed52e4d6fa65418819d07e08cd725,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 226820007330464057, guid: 0bbed52e4d6fa65418819d07e08cd725,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 226820007330464057, guid: 0bbed52e4d6fa65418819d07e08cd725,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 226820007330464057, guid: 0bbed52e4d6fa65418819d07e08cd725,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 226820007330464058, guid: 0bbed52e4d6fa65418819d07e08cd725,
+        type: 3}
+      propertyPath: volumeSlider
+      value: 
+      objectReference: {fileID: 1411339627}
+    - target: {fileID: 226820007330464058, guid: 0bbed52e4d6fa65418819d07e08cd725,
+        type: 3}
+      propertyPath: difficultySlider
+      value: 
+      objectReference: {fileID: 147816954}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0bbed52e4d6fa65418819d07e08cd725, type: 3}
+--- !u!114 &551766953 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 226820007330464058, guid: 0bbed52e4d6fa65418819d07e08cd725,
+    type: 3}
+  m_PrefabInstance: {fileID: 551766952}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b5f077451d9e9d4e88d825db6a15660, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &555950894
 GameObject:
   m_ObjectHideFlags: 0
@@ -1093,9 +1183,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 17633883612183910, guid: d9e8bc2b5bc2d4843ba2b0e25862b5e6,
-          type: 3}
-        m_MethodName: LoadMenu
+      - m_Target: {fileID: 551766953}
+        m_MethodName: SaveAndExit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

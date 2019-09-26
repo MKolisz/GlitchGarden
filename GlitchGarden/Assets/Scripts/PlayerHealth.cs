@@ -5,12 +5,14 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] int health = 100;
+    int health = 100;
     Text healthText;
 
     // Start is called before the first frame update
     void Start()
     {
+        float healthInFloat = (float)health;
+        health=health-(int)(healthInFloat*PlayerPrefsController.GetDifficulty());
         healthText = GetComponent<Text>();
         UpdateDisplay();
     }
